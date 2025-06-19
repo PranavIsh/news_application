@@ -315,6 +315,13 @@ export class News extends Component {
     };
   }
 
+  async componentDidMount(){
+    let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=979f1e008c4d45ef8377f020074d12dd";
+    let data = await fetch(url); 
+    let formatedData = await data.json();
+    this.setState({articles:formatedData.articles});
+  }
+
   render() {
     return (
       <div className="container my-3 w-100">
