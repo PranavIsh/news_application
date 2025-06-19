@@ -318,7 +318,7 @@ export class News extends Component {
   render() {
     return (
       <div className="container my-3 w-100">
-        <h1 className="text-dark text-center">Trending News</h1>
+        <h1 className="text-dark text-center">Trending News 11</h1>
         <div className="container d-flex justify-content-center align-items-center flex-wrap gap-4">
           {this.state.articles.map((element) => {
             return <NewsItem key={element.url}
